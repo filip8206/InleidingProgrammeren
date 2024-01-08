@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loves me...?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+    <main>
+        <h1 id="lovesme">Loves me</h1>
+        <div class="helebloem">
+            <img src="img/blaadjes/25.png" id="bloem">
+            <!-- <h1 id="counter">30</h1> -->
+            <img src="img/gezichtjes/neutraal.png" id="gezicht">
+        </div>
+        <h2>Speler <em class="speler1" id="actievespeler">1</em></h2>
+        <button id="plukken">Pluk een blaadje</button>
+        <button id="volgende">Volgende</button>
+        <button id="nieuwspel" class="nodisplay">Nieuw spel</button>
+        <p id="resterendeblaadjes">Je kan nog 3 blaadjes plukken.</p>
+        <div id="scoremuziekcontainer">
+            <div class="scorebord">
+                <h2>Punten</h2>
+                <h3>Speler <em class="speler1">1</em> : <b id="speler1">0</b></h3>
+                <h3>Speler <em class="speler2">2</em> : <b id="speler2">0</b></h3>
+            </div>
+            <div>
+                <img src="img/speakeruit.png" id="musiccontrol">
+            </div>
+        </div>
+        <h3 id="uitlegbutton">Speluitleg</h3>
+        <div id="popup">
+            <div>
+                <h1>Loves me...?</h1>
+                <p>
+                    Welkom bij een klein multiplayer spelletje voor twee spelers. In dit spel speel je tegen de ander en
+                    moet
+                    je goed een paar zetten vooruit plannen.
+                </p>
+                <h2>De spelregels</h2>
+                <p>
+                    In dit spel heb je een bloem met een aantal blaadjes. Per beurt kan je 1, 2 of 3 blaadjes van de
+                    bloem plukken. Met elk blaadje verandert de bloem naar <strong>Loves me</strong> of <strong>Loves me
+                        not</strong>. Wanneer de bloem eindigt op <strong>Loves me</strong>, krijgt de speler die het
+                    laatste blaadje plukt een punt. Wanneer de bloem eindigt op <strong>Loves me not</strong>, krijgt de
+                    andere speler een punt. Goed nadenken dus!
+                </p>
+                <h3>Bronnen</h3>
+                <p>Achtergrondafbeelding: ConcernedApe, Stardew Valley <a
+                        href="https://rare-gallery.com/mocahbig/427204-Stardew-Valley-stars-simple-simple-background-space.png">rare-gallery.com</a>
+                </p>
+                <p>Bloem afbeelding assets: Nintendo, New Super Mario Bros. Geript door: <a
+                        href="https://www.spriters-resource.com/ds_dsi/supermario64ds/sheet/6851/">TJ the Kid</a>
+                </p>
+                <p>
+                    Lettertype: Nintendo, Splatoon 2 <a href="https://fontspark.com/splatoon-font/">Splatfont 2</a>
+                </p>
+                <p>
+                    Achtergrondmuziek: Nintendo, New Super Mario Bros <a href="https://www.youtube.com/watch?v=KKtZWhaXl6o">Loves me...</a>
+                </p>
+                <button id="popupbutton">Speel!</button>
+            </div>
+        </div>
+        <audio id="backgroundmusic" loop>
+            <source src="./audio/background_music.mp3" type="audio/mpeg">
+        </audio>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

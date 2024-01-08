@@ -1,0 +1,232 @@
+/* lettertypes importeren */
+@font-face {
+    font-family: Splatfont2;
+    src: url(../fonts/Splatfont2.ttf);
+}
+
+body {
+    font-family: Splatfont2, sans-serif;
+    color: white;
+    background-image: url(../img/background.png);
+    text-align: center;
+    margin: 0;
+}
+
+.speler1 {
+    color: rgb(69, 177, 255);
+}
+
+.speler2 {
+    color: rgb(255, 65, 65);
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.nodisplay {
+    display: none;
+}
+
+h1#lovesme {
+    font-size: 2.5em;
+}
+
+/* de benodigde css van de pop-up */
+div#popup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div#popup div {
+    background-color: white;
+    color: black;
+    margin: 5em;
+    padding: 1em;
+    padding-left: 2em;
+    text-align: left;
+}
+
+div#popup div p {
+    margin-top: -1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* de stijl van de knoppen */
+button {
+    width: 15em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Splatfont2;
+    line-height: 1em;
+}
+
+button#plukken {
+    background-color: rgb(196, 216, 255);
+    border: 2px solid rgb(152, 168, 197);
+}
+
+button#volgende {
+    background-color: rgb(247, 196, 255);
+    border: 2px solid rgb(176, 142, 185);
+}
+
+/* button#plukken:hover {
+    background-color: rgb(152, 168, 197);
+}
+
+button#volgende:hover {
+    background-color: rgb(176, 142, 185);
+} */
+
+button#plukken:active {
+    background-color: rgb(152, 168, 197);
+}
+
+button#volgende:active {
+    background-color: rgb(176, 142, 185);
+}
+
+button#popupbutton {
+    padding: 0.7em;
+    width: 8em;
+    border-radius: 0.5em;
+    background-color: rgb(196, 202, 255);
+    border: 2px solid rgb(152, 157, 202);
+}
+
+button#popupbutton:hover {
+    background-color: rgb(152, 157, 202);
+}
+
+button#popupbutton:active {
+    background-color: rgb(152, 157, 202);
+}
+
+div#scoremuziekcontainer {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.scorebord {
+    background-color: white;
+    color: black;
+    border-radius: 2em;
+    padding: 0.5em;
+    margin: 1em;
+    width: 10em;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+
+/* Bloem css */
+.helebloem {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.helebloem img {
+    width: 350px;
+    margin-top: -3em;
+    margin-bottom: -2em;
+}
+
+#bloem {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#gezicht {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h3#uitlegbutton {
+    text-decoration: underline;
+    margin-top: 0;
+    padding-left: 1.5em;
+    text-align: left;
+}
+
+/* classes lovesmetext */
+.lovesme {
+    color: rgb(255, 152, 152);
+}
+
+.lovesmenot {
+    color: rgb(177, 193, 255);
+}
+
+.reallylovesme {
+    color: rgb(255, 24, 97);
+}
+
+.reallylovesmenot {
+    color: rgb(141, 139, 255);
+}
+
+.reallyloves {
+    color: rgb(255, 206, 115);
+}
+
+/* music controls */
+img#musiccontrol {
+    width: 5em;
+}
+
+/* Responsive design */
+@media screen and (max-width: 450px) {
+    button {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2px;
+    }
+
+    div.helebloem img {
+        max-width: 100%;
+        margin-top: -4em;
+        margin-bottom: -2em;
+    }
+
+    div#popup div {
+        margin: 8%;
+        padding: 1em;
+    }
+
+    div#scoremuziekcontainer {
+        display: block;
+        text-align: center;
+    }
+
+    div#scoremuziekcontainer img {
+        margin-top: 1em;
+    }
+
+    .scorebord {
+        margin: auto;
+        margin-top: 3em;
+    }
+
+    button#popupbutton {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    h3#uitlegbutton {
+        text-align: center;
+        padding-left: 0;
+    }
+}
